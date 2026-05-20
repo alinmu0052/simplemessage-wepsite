@@ -11,8 +11,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       margin: 0;
+      padding: 20px;
     }
     .card {
       background: white;
@@ -21,6 +22,7 @@
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       text-align: center;
       max-width: 400px;
+      width: 100%;
     }
     img {
       width: 150px;
@@ -40,6 +42,30 @@
       font-size: 16px;
       line-height: 1.5;
     }
+    .reply-box {
+      margin-top: 20px;
+      text-align: left;
+    }
+    label {
+      font-size: 14px;
+      color: #333;
+      font-weight: bold;
+    }
+    textarea {
+      width: 100%;
+      height: 80px;
+      margin-top: 8px;
+      padding: 10px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      resize: none;
+    }
+    textarea:focus {
+      outline: none;
+      border-color: #4CAF50;
+    }
   </style>
 </head>
 <body>
@@ -47,10 +73,13 @@
     <img src="umar.jpg" alt="Photo of Umar Bashar Dan Tara">
     <h1>Thank You, Umar Bashar Dan Tara!</h1>
     <p>Thanks for everything you’ve done for me. I really appreciate your help and friendship 🙏</p>
-    <p>Ya nelfund</p>
-    <p>Ya Kwallo</p>
+    <p>Ya Nelfund</p>
+    <p></p>What's Your Target Computer Science</p>
     <p>Dan Allah Ka Dawo Gida</p>
+    <div class="reply-box">
+      <label for="reply">Your reply:</label>
+      <textarea id="reply" placeholder="Write your reply here..."></textarea>
+    </div>
   </div>
-  
 </body>
 </html>
